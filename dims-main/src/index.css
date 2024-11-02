@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Desktop */
+@keyframes incr {
+  from {width: 0%;}
+  to {width: 22.9%;}
+}
+
+.increase {
+  animation: incr 1s ease-out 0s 1 normal forwards;
+}
+
+@keyframes decr {
+  from {width: 22.9%;}
+  to {width: 0%;}
+}
+
+.decrease {
+  animation: decr 2s ease-in-out 10000s 1 normal forwards;
+}
+
+/* mobile */
+@keyframes incrMobile {
+  from {width: 0%;}
+  to {width: 48%;}
+}
+
+.increaseMobile {
+  animation: incrMobile 1s ease-out 0s 1 normal forwards;
+}
+
+@keyframes decrMobile {
+  from {width: 48%;}
+  to {width: 0%;}
+}
+
+.decreaseMobile {
+  animation: decrMobile 2s ease-in-out 10000s 1 normal forwards;
+}
+
+ /* second */
+@keyframes incrs {
+  from {width: 0%;}
+  to {width: 30%;}
+}
+
+.increases {
+  animation: incrs 1s ease-out 0s 1 normal forwards;
+}
+
+@keyframes decrs {
+  from {width: 30%;}
+  to {width: 0%;}
+}
+
+.decreases {
+  animation: decrs 2s ease-in-out 10000s 1 normal forwards;
+}
